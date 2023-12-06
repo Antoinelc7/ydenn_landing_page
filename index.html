@@ -36,7 +36,9 @@
           </div>
         </div>
         <div class="right-wrapper">
-          <div class="project-image-container"></div>
+          <div class="project-image-container">
+            <img src="/font_image_section1.png" alt="">
+          </div>
         </div>
       </section>
       <section class="second-section">
@@ -118,23 +120,23 @@
           <div class="names">
             <label>
               Prénom
-              <input type="text" name="firstname" placeholder="Prénom">
+              <input type="text" name="firstname" id="firstname" placeholder="Prénom" required>
             </label>
             <label>
               Nom
-              <input type="text" name="lastname" placeholder="Nom">
+              <input type="text" name="lastname" id="lastname" placeholder="Nom" required>
             </label>
           </div>
           <label>
             Email
-            <input type="email" name="email" placeholder="you@company.com">
+            <input type="email" name="email" id="email" placeholder="you@company.com" required>
           </label>
           <label>
             Message
-            <textarea name="message"></textarea>
+            <textarea name="message" id="message"></textarea>
           </label>
           <label class="formCheckboxLab">
-            <input type="checkbox" name="checkform">
+            <input type="checkbox" name="checkform" id="checkform" required>
             Vous acceptez notre politique de confidentialité.
           </label>
           <button type="submit">Envoyer un message</button>
