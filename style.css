@@ -1,96 +1,147 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+nav{
+  max-width: 100vw;
+  height: 86px;
+  background-color: #0E1D36;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav .logo{
+  margin-left: 54px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+nav .contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 140px;
+  width: 189px;
+  height: 45px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+nav .contact span{
+  width: 1px;
+  height: 19px;
+  background: #DAD8D8;
+  display: flex;
 }
 
-.card {
-  padding: 2em;
+nav .contact a{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+nav .contact svg {
+  filter: invert(1);
+  margin-left: 10px;
 }
 
-button {
+section{
+  width: 100vw;
+  height: 807px;
+  /* flex-shrink: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+section .left-wrapper{
+  width: 55%;
+  height: 524px;
+  /* border: 1px solid blue; */
+}
+
+section .left-wrapper .project-name-container h4{
+  color: #72CCA4;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+section .left-wrapper .project-title-container{
+  width: 664px;
+  margin-top: 19px;
+  /* border: 1px solid red; */
+}
+
+section .left-wrapper .project-title-container h1{
+  color: var(--text-title, #2E2E2E);
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 120% */
+}
+
+section .left-wrapper .project-description-container{
+  width: 649px;
+  margin-top: 26px;
+}
+
+section .left-wrapper .project-description-container p{
+  color: var(--text-body, #808080);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.7px;
+}
+
+
+section .right-wrapper{
+  width: 30%;
+  height: 524px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid green; */
+}
+
+section .right-wrapper .project-image-container{
+  border-radius: 21px;
+  background: url(/font_image_section1.png), lightgray 50% / cover no-repeat;
+  width: 417.5px;
+  height: 524px;
+  flex-shrink: 0;
+}
+
+section .left-wrapper .project-cta-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 63px;
+}
+
+section .left-wrapper .project-cta-container button{
+  display: flex;
+  width: 160px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+section .left-wrapper .project-cta-container button:first-child{
+  margin-right: 24px;
+  background: #72CCA4;
+  color: white;
 }
