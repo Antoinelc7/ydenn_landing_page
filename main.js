@@ -14,8 +14,8 @@ open.addEventListener('click', () => {
     selectorTexte.innerText = "Une open room est une room dans laquelle une discussion à lieu avec un nombre d’utilisateurs définis pouvant interagir et le reste des utilisateurs non inscrit peuvent quant à eux assister à l'échange sans écrire et cette fois sans limite.";
     openSpan.style.backgroundColor = '#72CCA4';
     closeSpan.style.backgroundColor = '#C4C4C4';
-    selectorImage[0].src = './public/open_room1.png';
-    selectorImage[1].src = './public/open_room2.png';
+    selectorImage[0].src = './open_room1.png';
+    selectorImage[1].src = './open_room2.png';
 });
 
 close.addEventListener('click', () => {
@@ -23,6 +23,6 @@ close.addEventListener('click', () => {
     selectorTexte.innerText = "Une private room est une room privé lancé par un utilisateur et ses abonnées. Seuls ces derniers y ont accès. Le but, créer des espaces d’échanges entre amis sur des thèmes et créneaux choisis.";
     openSpan.style.backgroundColor = '#C4C4C4';
     closeSpan.style.backgroundColor = '#72CCA4';
-    selectorImage[0].src = './public/private_room1.png';
-    selectorImage[1].src = './public/private_room2.png';
+    selectorImage[0].src = './private_room1.png';
+    selectorImage[1].src = './private_room2.png';
 });
