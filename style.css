@@ -52,6 +52,10 @@ nav .contact a{
   text-decoration: none;
   display: flex;
   align-items: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 15px;
 }
 
 nav .contact svg {
@@ -61,7 +65,7 @@ nav .contact svg {
 
 .first-section{
   width: 100%;
-  height: 807px;
+  min-height: 807px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +157,7 @@ nav .contact svg {
 
 .second-section{
   width: 100%;
-  height: 771px;
+  min-height: 771px;
   background: #0E1D36;
 }
 
@@ -186,7 +190,7 @@ nav .contact svg {
 
 .second-section .card-wrapper{
   width: 100%;
-  height: 355px;
+  min-height: 355px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -195,12 +199,25 @@ nav .contact svg {
 }
 
 .second-section .card-wrapper .card{
-  width: 350px;
+  max-width: 350px;
   height: 455px;
+  /* height: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 1150px){
+
+  .second-section .card-wrapper{
+    flex-direction: column;
+  }
+
+  /* .second-section .card-wrapper .card{
+    margin-top: 50px;
+  } */
+
 }
 
 .second-section .card-wrapper .card .card-texte{
@@ -388,6 +405,12 @@ nav .contact svg {
   background: #FFF;
 }
 
+@media screen and (max-width: 1350px){
+  #fourth-section form{
+    width: 90%;
+  }
+}
+
 #fourth-section form .section-form-informations{
   width: 480px;
   height: 94px;
@@ -431,6 +454,21 @@ nav .contact svg {
   font-size: 14px;
   line-height: 20px;
   margin-top: 24px;
+}
+
+@media screen and (max-width: 650px){
+  #fourth-section form{
+    width: 90%;
+  }
+
+  #fourth-section form .names{
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #fourth-section form .names input[type="text"]{
+    width: 480px;
+  }
 }
 
 #fourth-section form input[type="text"]{
@@ -530,6 +568,7 @@ footer .footer-col1 .social-icons{
 
 footer .footer-col1 .social-icons svg{
   margin: 0 9px;
+  cursor: pointer;
 }
 
 footer .footer-col2,
@@ -568,4 +607,33 @@ footer .footer-col4 ul li{
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+}
+
+@media screen and (max-width: 1350px){
+  footer{
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer .footer-col2,
+  footer .footer-col3,
+  footer .footer-col4{
+    height: 50px;
+  }
+
+  footer .footer-col1,
+  footer .footer-col2 ul,
+  footer .footer-col3 ul,
+  footer .footer-col4 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer .footer-col2 ul li,
+  footer .footer-col3 ul li,
+  footer .footer-col4 ul li{
+    margin: 0 50px;
+  }
+
 }
