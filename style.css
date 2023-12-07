@@ -447,6 +447,11 @@ nav .contact svg {
   cursor: pointer;
 }
 
+.third-section .selector-container .selector-displayer-container .selector-texte-container button a{
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1250px){
 
   .third-section{
