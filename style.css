@@ -456,7 +456,7 @@ nav .contact svg {
   .third-section .selector-container{
     align-items: center;
     justify-content: center;
-    width: 700px;
+    width: 100%;
     height: auto;
   }
 
@@ -470,11 +470,19 @@ nav .contact svg {
   }
 
   .third-section .selector-container .selector-displayer-container .selector-texte-container{
-    width: 80%;
+    width: 90%;
     height: 100%;
     gap: 0px;
     margin: 100px 0px 50px 0px;
-    padding: 48px;
+  }
+
+  #selector-close span,
+  #selector-open span{
+    width: 100%;
+  }
+
+  .third-section .selector-container .selector-image img{
+    width: 100%;
   }
 }
 
