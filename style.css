@@ -2,6 +2,28 @@
 @import url('https://fonts.cdnfonts.com/css/lato');
 @import url('https://fonts.cdnfonts.com/css/inter');
 
+@font-face {
+  font-family: 'ObjectSans Heavy';
+  src: url('ObjectSans-Heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeue Regular';
+  src: url('HelveticaNeue Regular.ttf') format('truetype');
+}
+
+:root{
+  --color1: #0E1D36;
+  --color2: #72CCA4;
+  --color3: #101828;
+  
+
+  --primary-color: #221BFF;
+  --secondary-color: #000000;
+  --third-color: #E0E0E0;
+  --fourth-color: #FFFFFF;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -20,7 +42,8 @@ html{
 nav{
   width: 100%;
   height: 86px;
-  background-color: #0E1D36;
+  /* background-color: #0E1D36; */
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +52,13 @@ nav{
 
 nav .logo{
   margin-left: 54px;
+  height: 100%;
+}
+
+nav .logo img{
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 nav .contact{
@@ -52,7 +82,7 @@ nav .contact a{
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-family: Poppins;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-style: normal;
   font-size: clamp(14px, 2vw, 16px);
   line-height: 15px;
@@ -92,8 +122,9 @@ nav .contact svg {
 }
 
 .first-section .left-wrapper .project-name-container h4{
-  color: #72CCA4;
-  font-family: Poppins;
+  /* color: #72CCA4; */
+  color: var(--primary-color);
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 600 normal;
   font-size: clamp(16px, 3vw, 20px);
   line-height: normal;
@@ -106,7 +137,7 @@ nav .contact svg {
 
 .first-section .left-wrapper .project-title-container h1{
   color: var(--text-title, #2E2E2E);
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 700 normal;
   font-size: clamp(26px, 5vw, 50px);
   line-height: clamp(48px, 6vw, 60px);
@@ -119,7 +150,7 @@ nav .contact svg {
 
 .first-section .left-wrapper .project-description-container p{
   color: var(--text-body, #808080);
-  font-family: Poppins;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font: 400 normal;
   font-size: clamp(10px, 2vw, 14px);
   line-height: clamp(24px, 3vw, 28px);
@@ -154,7 +185,8 @@ nav .contact svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #72CCA4;
+  /* background: #72CCA4; */
+  background-color: var(--primary-color);
   border: none;
 }
 
@@ -219,7 +251,8 @@ nav .contact svg {
 .second-section{
   width: 100%;
   min-height: 771px;
-  background: #0E1D36;
+  /* background: #0E1D36; */
+  background-color: var(--secondary-color);
 }
 
 .second-section .section-title-container{
@@ -229,7 +262,7 @@ nav .contact svg {
 .second-section .section-title-container h2{
   color: #FFF;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 600 normal;
   font-size: 40px;
   line-height: 60px;
@@ -242,7 +275,7 @@ nav .contact svg {
 .second-section .section-description-container h4{
   color: #FFF;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -299,7 +332,7 @@ nav .contact svg {
 .second-section .card-wrapper .card .card-texte p{
   color: #101010;
   text-align: center;
-  font-family: Lato;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -322,7 +355,7 @@ nav .contact svg {
 .third-section .section-title-container h2{
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 600 normal;
   font-size: clamp(24px, 4vw, 40px);
   line-height: 60px;
@@ -335,7 +368,7 @@ nav .contact svg {
 .third-section .section-description-container h4{
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: clamp(16px, 3vw, 20px);
@@ -360,7 +393,7 @@ nav .contact svg {
 #selector-open h3{
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 600 normal;
   font-size: clamp(20px, 3vw, 30px);
   line-height: 40px;
@@ -370,7 +403,7 @@ nav .contact svg {
 #selector-close h3{
   color: #000;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font: 600 normal;
   font-size: clamp(20px, 3vw, 30px);
   line-height: 40px;
@@ -393,7 +426,8 @@ nav .contact svg {
   display: flex;
   position: relative;
   bottom: 0;
-  background: #72CCA4;
+  /* background: #72CCA4; */
+  background-color: var(--primary-color);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -424,10 +458,10 @@ nav .contact svg {
 
 .third-section .selector-container .selector-displayer-container .selector-texte-container .selector-texte{
   color: var(--black-gray-777, #777);
-  font-family: Inter;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-size: clamp(16px, 2vw, 18px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.72px;
 }
@@ -442,7 +476,8 @@ nav .contact svg {
   margin-top: 92px;
   gap: 10px;
   border: none;
-  background: #72CCA4;
+  /* background: #72CCA4; */
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
 }
@@ -499,7 +534,8 @@ nav .contact svg {
   justify-content: center;
   align-items: center;
   padding: 64px 0px 96px 0px;
-  background: #0E1D36;
+  /* background: #0E1D36; */
+  background-color: var(--secondary-color);
 }
 
 #fourth-section form{
@@ -525,7 +561,7 @@ nav .contact svg {
 
 #fourth-section form .section-form-informations h2{
   color: var(--gray-900, #101828);
-  font-family: Poppins;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font-size: clamp(24px, 4vw, 36px);
   font-style: normal;
   font-weight: 600;
@@ -535,7 +571,7 @@ nav .contact svg {
 
 #fourth-section form .section-form-informations h4{
   color: var(--gray-500, #667085);
-  font-family: Inter;
+  font-family: 'ObjectSans Heavy', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: clamp(16px, 3vw, 20px);
@@ -551,9 +587,9 @@ nav .contact svg {
 #fourth-section form label,
 #fourth-section form .names label{
   color: var(--gray-700, #344054);
-  font-family: Inter;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 14px;
   line-height: 20px;
   margin-top: 24px;
@@ -620,7 +656,7 @@ nav .contact svg {
   border-radius: 8px;
   padding: 12px 20px;
   margin-top: 32px;
-  background: #6FCAA5;
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
   border: 1px solid var(--brand-600, #7F56D9);
@@ -663,7 +699,8 @@ footer{
   width: 100%;
   min-height: 420px;
   height: auto;
-  background: #0E1D36;
+  /* background: #0E1D36; */
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -673,10 +710,19 @@ footer .footer-col1{
   margin-left: -52px;
 }
 
+footer .footer-col1 .logo{
+  width: 296px;
+  /* width: 100%; */
+}
+
+footer .footer-col1 .logo img{
+  width: 100%;
+}
+
 footer .footer-col1 .description{
   width: 296px;
-  font-family: Inter;
-  font: 400 normal;
+  font-family: 'HelveticaNeue Regular', sans-serif;
+  font: 800 normal;
   font-size: clamp(12px, 2vw, 16px);
   line-height: 26px;
   margin-top: 10px;
@@ -710,8 +756,7 @@ footer .footer-col2 ul li:first-child,
 footer .footer-col3 ul li:first-child,
 footer .footer-col4 ul li:first-child{
   color: var(--text-white, #FFF);
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: Inter;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-size: clamp(10px, 2vw, 16px);
   font-style: normal;
   font-weight: 700;
@@ -724,7 +769,7 @@ footer .footer-col3 ul li,
 footer .footer-col4 ul li{
   margin-top: 24px;
   color: var(--text-disable, #E6E6E6);
-  font-family: Inter;
+  font-family: 'HelveticaNeue Regular', sans-serif;
   font-size: clamp(10px, 2vw, 16px);
   font-style: normal;
   font-weight: 400;
